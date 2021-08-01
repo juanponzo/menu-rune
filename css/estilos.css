@@ -4,27 +4,40 @@
     box-sizing: border-box;
 }
 
-
 body{
+    background-color:  #000000;
     width: 100vw;
     text-align: center;
-    background-color: #020201;
+
 }
 
-.header{
-    width: 100%;
+#header{
+    background-color: #000000;
+    width: 100vw;
+    height: 100px;
    display: inline-flex;
    justify-content: space-around;
    align-items: center;
-   margin-top: 0;
+
 }
-.header img{
-    width: 100%;
+
+.logo{
     height: 100%;
+    width: 300px;
+
 }
 
-.contenedor_categorias{
 
+.logo img{
+width: 100%;
+height: 100%;
+}
+
+
+
+
+main{
+    background: #000000;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,26 +45,33 @@ body{
     flex-wrap: nowrap;
 }
 
-.categoria{
+.contenedorImg{
+    background-color: #000000;
 
     width:95%;
-    margin-top: 4px;
-    margin-bottom: 4PX;
+    margin-top: 10px;
+    margin-bottom: 10PX;
+  
 }
 
-
-.categoria img{
+.contenedorImg img {
     width: 100%;
     height: 100%;
 }
 
-.precio { 
-    margin-top: 2px;
-    background-color: bisque;
-    width: 95%;
-    height: 20%;
-}
 
-h1{
-    font-family: 'Bebas Neue', cursive;
+@media (max-width: 360px){
+
+    #header{
+        height: 60px;
+    }
+   .logo{
+       width: 150px;
+   }
+
+   .contenedorImg{
+       margin-top: 4px;
+       margin-bottom: 4px;
+   }
+
 }
